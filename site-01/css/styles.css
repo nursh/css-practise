@@ -20,4 +20,32 @@ body {
   background-size: cover;
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+  position: relative;
+}
+
+.header-text {
+  text-align: center;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.heading-primary {
+  color: white;
+  text-transform: uppercase;
+}
+
+.heading-title {
+  display: block;
+  font-weight: 700;
+  letter-spacing: .5rem;
+  font-size: 2.5rem;
+}
+
+.heading-subtitle {
+  display: block;
+  font-weight: 400;
+  letter-spacing: .3rem;
+  font-size: 1.75rem;
 }
