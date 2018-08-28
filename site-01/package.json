@@ -1,0 +1,17 @@
+{
+  "name": "site-01",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "css:compile": "node-sass scss/main.scss css/styles.css --watch",
+    "serve": "live-server"
+  },
+  "keywords": [],
+  "author": "nur-sh",
+  "license": "ISC",
+  "dependencies": {
+    "live-server": "^1.2.0",
+    "node-sass": "^4.9.3"
+  }
+}
