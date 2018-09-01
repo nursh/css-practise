@@ -2,7 +2,9 @@ $color-light: #6f6fc7;
 $color-dark: #3130aa;
 $color-secondary-dark: #32263d;
 
-* {
+*
+*::before
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: inherit;
