@@ -1,3 +1,5 @@
+$gutter-size: 3rem;
+
 *
 *::after
 *::before {
@@ -12,4 +14,34 @@ html {
 
 body {
   box-sizing: border-box;
+}
+
+.row {
+  font-size: 2rem;
+  max-width: 114rem;
+  margin: 0 auto;
+
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+
+  [class^="col-"] {
+    float: left;
+    color: #fff;
+    background-color: cornflowerblue;
+
+    &:not(:last-child) {
+      margin-right: $gutter-size;
+    }
+  }
+
+  .col-6 {
+    width: calc((100% - #{$gutter-size})/2);
+  }
 }
